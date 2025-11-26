@@ -18,33 +18,31 @@ terraform-aws-project/
 ├── alb.tf              # Application Load Balancer
 ├── outputs.tf          # Output values
 ├── user_data.sh        # EC2 bootstrap script
+├── screenshots/         # Screenshot
+│   ├── plan.png
+│   ├── apply.png
+│   ├── Instance1.png
+│   └── Instance2.png
 └── README.md           # This file
 
+## Execution Results
 
+### 1. Terraform Plan
+![Terraform Plan](screenshots/plan.png)
 
+### 2. Terraform Apply
+![Terraform Apply](screenshots/apply.png)
 
+### 3. AWS Console – EC2 Instances (Part 1)
+![EC2 Instances 1](screenshots/Instance1.png)
 
+### 4. AWS Console – EC2 Instances (Part 2)
+![EC2 Instances 2](screenshots/Instance2.png)
 
-
-
-Screenshot : Terraform Plan 
-
-Screenshot : Terraform Apply 
-
-
-
-
-
-
-
-
-
-
-Screenshot : AWS Console - EC2 Instances 1
-
-
-
-
-Screenshot 11: AWS Console - EC2 Instances 2
-
+### Final Result
+After successful `terraform apply`:
+- 2 running EC2 instances with Apache web server  
+- Application Load Balancer accessible via DNS name  
+- All resources created in isolated VPC  
+- Full infrastructure can be destroyed with `terraform destroy`
 
