@@ -7,3 +7,9 @@ terraform.tfvars
 *.tfvars
 *.tfplan
 crash.log
+# Ignore IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

@@ -1,0 +1,50 @@
+﻿Terraform AWS Infrastructure Project
+   Project Overview
+This project creates a complete AWS infrastructure using Terraform with best practices:
+    • VPC with public and private subnets across multiple AZs 
+    • 2 EC2 instances running Apache web servers 
+    • Application Load Balancer distributing traffic across instances 
+    • Security groups with proper isolation 
+    • Modular structure for maintainability
+
+Project Structure
+terraform-aws-project/
+├── versions.tf          # Terraform and provider versions
+├── variables.tf         # Input variables
+├── terraform.tfvars     # Variable values
+├── vpc.tf              # VPC configuration
+├── security.tf         # Security groups
+├── compute.tf          # EC2 instances
+├── alb.tf              # Application Load Balancer
+├── outputs.tf          # Output values
+├── user_data.sh        # EC2 bootstrap script
+└── README.md           # This file
+
+
+
+
+
+
+
+
+Screenshot : Terraform Plan 
+
+Screenshot : Terraform Apply 
+
+
+
+
+
+
+
+
+
+
+Screenshot : AWS Console - EC2 Instances 1
+
+
+
+
+Screenshot 11: AWS Console - EC2 Instances 2
+
+
