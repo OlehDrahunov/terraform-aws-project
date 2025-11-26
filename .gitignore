@@ -2,11 +2,14 @@
 .terraform/
 *.tfstate
 *.tfstate.backup
+*.tfstate.*.backup
 .terraform.lock.hcl
 terraform.tfvars
 *.tfvars
+*.auto.tfvars
 *.tfplan
 crash.log
+
 # Ignore IDE settings
 .vscode/
 .idea/
